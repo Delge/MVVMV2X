@@ -9,6 +9,7 @@ import android.content.pm.PackageManager.PERMISSION_GRANTED
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.WindowManager
 import android.view.animation.AnimationUtils
@@ -73,6 +74,8 @@ class MainActivity : AppCompatActivity() {
         viewModel.initTts()
         viewModel.startThread()
         viewModel.stopVoice()
+
+        Log.d("test","END")
 
 
 
